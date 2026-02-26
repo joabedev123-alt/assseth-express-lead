@@ -20,10 +20,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg flex items-center justify-center btn-primary-gradient text-lg font-bold font-display">
-            A
-          </div>
-          <span className="font-display text-xl font-bold text-foreground">ASSETH</span>
+          <img src="/WhatsApp Image 2026-02-24 at 16.52.16 (1)-Photoroom.png" alt="ASSETH Logo" className="h-12 md:h-14 w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
@@ -41,9 +38,6 @@ const Header = () => {
 
         {/* CTAs */}
         <div className="hidden lg:flex items-center gap-3">
-          <a href="#contato" className="btn-outline-premium text-sm px-4 py-2">
-            Solicitar Proposta
-          </a>
           <a
             href={WHATSAPP_LINK}
             target="_blank"

@@ -2,16 +2,13 @@ const WHATSAPP_LINK = "https://wa.me/5549999926404";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background/80 py-16 px-4">
+    <footer className="bg-foreground text-background/80 py-10 md:py-16 px-4">
       <div className="container mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center btn-primary-gradient text-lg font-bold font-display">
-                A
-              </div>
-              <span className="font-display text-xl font-bold text-background">ASSETH</span>
+              <img src="/WhatsApp Image 2026-02-24 at 16.52.16 (1)-Photoroom.png" alt="ASSETH Logo" className="h-12 w-auto object-contain" />
             </div>
             <p className="text-sm leading-relaxed font-body text-background/60">
               Gestão contábil estratégica para empresas que querem crescer com segurança, organização e clareza.

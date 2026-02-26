@@ -11,7 +11,7 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section className="section-padding">
+    <section className="section-framed section-padding">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div

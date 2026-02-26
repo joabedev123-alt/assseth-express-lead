@@ -18,7 +18,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contato" className="section-padding">
+    <section id="contato" className="section-framed section-padding">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

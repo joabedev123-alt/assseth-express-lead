@@ -11,7 +11,7 @@ const stats = [
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="pt-20 md:pt-24 section-padding relative overflow-hidden">
+    <section id="inicio" className="section-framed pt-20 md:pt-32 pb-12 md:pb-24 px-4 bg-background">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -23,11 +23,11 @@ const HeroSection = () => {
             <span className="inline-block text-sm font-semibold font-body tracking-wider uppercase text-secondary mb-4 px-3 py-1 bg-secondary/10 rounded-full">
               Gestão Contábil Estratégica
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground mb-4 md:mb-6">
               Contabilidade estratégica para empresas que querem crescer com{" "}
               <span className="text-primary">segurança.</span>
             </h1>
-            <p className="text-lg text-muted-foreground mb-8 max-w-lg font-body leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-lg font-body leading-relaxed">
               Atendimento consultivo, organização fiscal e gestão contábil completa para você focar no seu negócio.
             </p>
 
@@ -40,12 +40,6 @@ const HeroSection = () => {
               >
                 <i className="bi bi-whatsapp text-lg"></i>
                 Falar com um contador agora
-              </a>
-              <a
-                href="#contato"
-                className="btn-outline-premium text-center px-8 py-4 text-base"
-              >
-                Solicitar diagnóstico gratuito
               </a>
             </div>
 
@@ -83,13 +77,13 @@ const HeroSection = () => {
               />
             </div>
             {/* Floating card */}
-            <div className="absolute -bottom-4 -left-4 md:-left-8 card-premium !p-4 flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary text-xl">
+            <div className="absolute bottom-4 left-4 md:bottom-8 md:-left-8 card-premium z-10 !p-3 flex items-center gap-3">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary text-lg md:text-xl">
                 <i className="bi bi-graph-up-arrow"></i>
               </div>
               <div>
                 <p className="text-sm font-bold text-foreground font-body">+500</p>
-                <p className="text-xs text-muted-foreground font-body">Empresas atendidas</p>
+                <p className="text-[10px] md:text-xs text-muted-foreground font-body">Empresas atendidas</p>
               </div>
             </div>
           </motion.div>

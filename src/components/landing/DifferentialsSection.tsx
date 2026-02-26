@@ -10,7 +10,7 @@ const diffs = [
 
 const DifferentialsSection = () => {
   return (
-    <section id="diferenciais" className="section-padding bg-card">
+    <section id="diferenciais" className="section-framed section-padding">
       <div className="container mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

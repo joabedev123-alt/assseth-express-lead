@@ -61,7 +61,9 @@
     font-family: 'Inter', system-ui, sans-serif;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-family: 'Playfair Display', serif;
   }
 
@@ -72,16 +74,16 @@
 
 @layer components {
   .section-padding {
-    @apply py-16 md:py-24 px-4;
+    @apply py-12 md:py-24 px-4;
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4;
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 leading-tight;
     font-family: 'Playfair Display', serif;
   }
 
   .section-subtitle {
-    @apply text-lg text-muted-foreground max-w-2xl mx-auto;
+    @apply text-base md:text-lg text-muted-foreground max-w-2xl mx-auto;
     font-family: 'Inter', sans-serif;
   }
 
@@ -125,5 +127,65 @@
   .whatsapp-float:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+  }
+
+  /* --- EMOLDURADO REALISTA (CORES DA LOGO) --- */
+  .section-framed {
+    /* Reescrever variáveis para forçar dark mode nesta seção */
+    --background: 215 50% 11%;
+    --foreground: 210 40% 98%;
+    --muted: 215 40% 20%;
+    --muted-foreground: 210 40% 70%;
+    --card: 215 50% 15%;
+    --card-foreground: 210 40% 98%;
+    --border: 215 40% 25%;
+
+    @apply relative overflow-hidden my-4 md:my-6 mx-2 md:mx-4 lg:mx-8 rounded-2xl md:rounded-3xl text-foreground;
+    background: linear-gradient(145deg, #091526, #122440);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+  }
+
+  .section-framed::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    /* Dourado/Bronze */
+    border-radius: 1rem;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: inset 0 0 20px rgba(212, 175, 55, 0.05);
+  }
+
+  @media (min-width: 768px) {
+    .section-framed::before {
+      top: 14px;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      border-radius: 1.25rem;
+      box-shadow: inset 0 0 30px rgba(212, 175, 55, 0.05);
+    }
+  }
+
+  .section-framed::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at bottom left, rgba(9, 21, 38, 0.9) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .section-framed>* {
+    position: relative;
+    z-index: 10;
   }
 }
