@@ -7,6 +7,7 @@ const navItems = [
   { label: "Serviços", href: "#servicos" },
   { label: "Para Quem", href: "#para-quem" },
   { label: "Diferenciais", href: "#diferenciais" },
+  { label: "Conveniados", href: "#conveniados" },
   { label: "Depoimentos", href: "#depoimentos" },
   { label: "FAQ", href: "#faq" },
   { label: "Contato", href: "#contato" },
@@ -61,8 +62,8 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-card border-t border-border px-4 pb-6">
-          <nav className="flex flex-col gap-3 pt-4">
+        <div className="lg:hidden bg-card border-t border-border px-4 pb-6 max-h-[calc(100vh-4rem)] overflow-y-auto shadow-xl">
+          <nav className="flex flex-col gap-3 pt-4 pb-12">
             {navItems.map((item) => (
               <a
                 key={item.href}

@@ -19,6 +19,9 @@ const DifferentialsSection = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="section-title">Por que a ASSETH?</h2>
+          <p className="section-subtitle mb-4">
+            ASSETH significa os Ativos das Organizações, os quais nos impulsionam, sejam financeiros, materiais ou humanos. E essa é a nossa missão, fomentar o seu negócio.
+          </p>
           <p className="section-subtitle mb-12">
             Nossos diferenciais fazem a diferença na sua experiência contábil.
           </p>

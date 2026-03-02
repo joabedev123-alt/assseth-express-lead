@@ -34,6 +34,7 @@ const Footer = () => {
               <li><a href="#inicio" className="hover:text-background transition-colors">Início</a></li>
               <li><a href="#servicos" className="hover:text-background transition-colors">Serviços</a></li>
               <li><a href="#diferenciais" className="hover:text-background transition-colors">Diferenciais</a></li>
+              <li><a href="#conveniados" className="hover:text-background transition-colors">Conveniados</a></li>
               <li><a href="#depoimentos" className="hover:text-background transition-colors">Depoimentos</a></li>
               <li><a href="#faq" className="hover:text-background transition-colors">FAQ</a></li>
             </ul>
@@ -69,8 +70,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-background/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/40 font-body">
+        <div className="border-t border-background/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/40 font-body text-center md:text-left">
           <p>© {new Date().getFullYear()} ASSETH Gestão Contábil. Todos os direitos reservados.</p>
+          <p className="flex items-center gap-1 justify-center">
+            Produzida com 💚 por <a href="https://camaly.com.br/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-background transition-colors font-semibold">CAMALY</a>
+          </p>
           <p>CNPJ: 85.149.219/0001-00</p>
         </div>
       </div>
