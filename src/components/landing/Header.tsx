@@ -4,6 +4,7 @@ const WHATSAPP_LINK = "https://wa.me/5549999926404";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
+  { label: "Quem Somos", href: "#quem-somos" },
   { label: "Serviços", href: "#servicos" },
   { label: "Para Quem", href: "#para-quem" },
   { label: "Diferenciais", href: "#diferenciais" },
