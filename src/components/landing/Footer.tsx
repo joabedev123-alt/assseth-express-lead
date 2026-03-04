@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="/WhatsApp Image 2026-02-24 at 16.52.20 (1)-Photoroom.png" alt="ASSETH Logo" className="h-12 w-auto object-contain" />
+              <img src="/WhatsApp Image 2026-02-24 at 16.52.20 (1)-Photoroom.png" alt="ASSETH Logo" className="h-32 md:h-40 xl:h-48 w-auto object-contain" />
             </div>
             <p className="text-sm leading-relaxed font-body text-background/60">
               Gestão contábil estratégica para empresas que querem crescer com segurança, organização e clareza.
