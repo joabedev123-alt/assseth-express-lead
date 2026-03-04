@@ -72,7 +72,7 @@ const HeroSection = () => {
               <img
                 src={heroImage}
                 alt="Equipe de contabilidade em escritório moderno"
-                className="w-full h-[400px] md:h-[500px] object-cover"
+                className="w-full h-[300px] md:h-[500px] object-cover"
                 loading="eager"
               />
             </div>

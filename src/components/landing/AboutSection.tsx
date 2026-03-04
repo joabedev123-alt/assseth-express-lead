@@ -30,7 +30,7 @@ const AboutSection = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-12 md:mb-16">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}

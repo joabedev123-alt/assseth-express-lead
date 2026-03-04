@@ -52,7 +52,7 @@ const HowItWorksSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="card-premium !p-10 text-center"
+            className="card-premium !p-6 md:!p-10 text-center"
           >
             <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center text-primary text-4xl mx-auto mb-6">
               <i className="bi bi-chat-heart-fill"></i>

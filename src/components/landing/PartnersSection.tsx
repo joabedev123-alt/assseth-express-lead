@@ -35,9 +35,9 @@ const PartnersSection = () => {
                     <span className="inline-block text-sm font-semibold font-body tracking-wider uppercase text-secondary mb-4 px-3 py-1 bg-secondary/10 rounded-full">
                         Lista de Conveniados
                     </span>
-                    <h2 className="section-title">Nossos Parceiros</h2>
+                    <h2 className="section-title">Empresas Conveniadas</h2>
                     <p className="section-subtitle mb-8 text-lg font-medium text-foreground">
-                        Desburocratizando empresas, fomentando negócios.
+                        Descontos de até 20% para clientes ASSETH.
                     </p>
                     <p className="section-subtitle mb-12 max-w-2xl mx-auto">
                         Oferecemos produtos que proporcionam o crescimento e a prospecção de parcerias para o seu negócio;
