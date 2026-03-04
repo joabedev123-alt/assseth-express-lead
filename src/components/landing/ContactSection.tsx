@@ -186,7 +186,13 @@ const ContactSection = () => {
             </div>
 
             {/* Map placeholder */}
-            <div className="card-premium !p-0 overflow-hidden h-64 rounded-xl">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Av.+Campos+Novos,+144,+Edif%C3%ADcio+Floren%C3%A7a,+Bairro+S%C3%A3o+Jos%C3%A9,+Fraiburgo+-+SC,+89580-194"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-premium !p-0 overflow-hidden h-64 rounded-xl block relative group"
+            >
+              <div className="absolute inset-0 z-10 bg-transparent" title="Ver no Google Maps"></div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.5!2d-50.92!3d-27.03!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDAyJzMwLjAiUyA1MMKwNTUnMTIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
                 width="100%"
@@ -196,8 +202,9 @@ const ContactSection = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Localização ASSETH"
+                className="w-full h-full pointer-events-none"
               />
-            </div>
+            </a>
           </motion.div>
         </div>
       </div>
