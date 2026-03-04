@@ -22,7 +22,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-2">
-          <img src="/WhatsApp Image 2026-02-24 at 16.52.16 (1)-Photoroom.png" alt="ASSETH Logo" className="h-12 md:h-14 w-auto object-contain" />
+          <img src="/logo 01.png" alt="ASSETH Logo" className="h-12 md:h-14 w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
